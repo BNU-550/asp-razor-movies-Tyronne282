@@ -25,9 +25,10 @@ namespace ASP_Razor_Movies.Models
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
-        public Genres Genre { get; set; }
+        [Required]
+        public Genres Genre { get; set; } = Genres.Anime;
 
-        [Range(5.99, 19.99)]
+        [Range(5.99, 19.99), Required]
         public decimal Price { get; set; }
     }
 }
