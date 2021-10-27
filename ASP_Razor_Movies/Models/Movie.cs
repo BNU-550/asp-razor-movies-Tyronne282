@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVC_Razor_Movies.Models
+namespace ASP_Razor_Movies.Models
 {
     public enum Genres
     {
@@ -27,6 +27,7 @@ namespace MVC_Razor_Movies.Models
 
         public Genres Genre { get; set; }
 
+        [Range(5.99, 19.99)]
         public decimal Price { get; set; }
     }
 }
