@@ -14,6 +14,6 @@ namespace ASP_Razor_Movies.Data
         {
         }
 
-        public DbSet<Movie> Movies; 
+        public DbSet<Movie> Movies { get; set; }
     }
 }
